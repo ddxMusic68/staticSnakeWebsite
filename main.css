@@ -1,0 +1,72 @@
+/* html elements */
+body {
+    font-family:sans-serif;
+    background-color:black;
+    color:white;
+}
+
+/* general */
+.center-content {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.row {
+    width:100%;
+}
+.d-none {
+    display:none;
+}
+
+
+/* game */
+.game-container {
+    width: 80vmin;
+    height: 80vmin;
+    border:white;
+    border-style:solid;
+}
+.gameover {
+    height:100%;
+    color:red;
+}
+.gameover a {
+    padding:10px;
+    border-radius:5px;
+    text-decoration:none;
+    background-color:blue;
+    color:white;
+}
+
+/* pixel */
+.pixel-container {
+    width:100%;
+    height:100%;
+}
+.pixel {
+    box-sizing:border-box;
+    width:10%;
+    height:10%;
+    
+    border:white;
+    border-style:solid;
+    border-width:1px;
+}
+.snake {
+    background-color:green;
+}
+.apple {
+    background-color:red;
+}
+
+/* wasd */
+@media (min-width:400px) {
+.hide-on-wide {
+    display: none;
+}
+}
+
+.wasd button{
+    width:60px;
+    aspect-ratio:1/1;
+}
