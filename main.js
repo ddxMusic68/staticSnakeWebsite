@@ -40,14 +40,14 @@ function handleInput(keydown) {
     }
 }
 
+function gridToIdx(x, y, width) {
+  return x + y * width;
+}
+
 // Game
 // global vars 
 let direction = "";
 let prevDirection = "";
-
-function gridToIdx(x, y, width) {
-  return x + y * width;
-}
 
 class Display { // 0 for blank  1 for snake  2 for apple
     constructor(width, height) {
@@ -194,4 +194,5 @@ class Game {
 }
 
 let g = new Game(10, 10)
+
 g.run()
